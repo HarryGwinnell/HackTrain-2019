@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://railgds.net/ws/booking" xmlns="http://railgds.net/ws/commontypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <book:retrieveBookingRecordRequest>
+         <context>
+            <distributorCode>HACKTRAIN</distributorCode>
+            <pointOfSaleCode>FR</pointOfSaleCode>
+            <channelCode>CH2</channelCode>
+         </context>
+         <book:recordLocator>B-DEMO-XXU0003ZX</book:recordLocator>
+         <book:responseSpec>
+            <book:includeOrderDetails>true</book:includeOrderDetails>
+            <book:includeOrderCosts>true</book:includeOrderCosts>
+            <book:includePassengerDetails>true</book:includePassengerDetails>
+            <book:includeFinancials>true</book:includeFinancials>
+            <book:includePaymentRequirements>true</book:includePaymentRequirements>
+            <book:includeTicketingOptions>true</book:includeTicketingOptions>
+            <book:includeFulfillmentInformation>true</book:includeFulfillmentInformation>
+         </book:responseSpec>
+      </book:retrieveBookingRecordRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

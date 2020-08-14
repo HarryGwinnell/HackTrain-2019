@@ -1,0 +1,125 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "altText": "",
+                  "horizontalAlignment": "Left",
+                  "spacing": "Small",
+                  "size": "Small",
+                  "url": "https://nathaniel.work/images/preserve/hackathon/hacktrain19/railarrows.svg"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Medium",
+                  "weight": "Bolder",
+                  "text": "{origin.name} to {destination.name}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spacing": "Medium",
+      "height": "stretch",
+      "minHeight": "37px"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "https://nathaniel.work/images/preserve/hackathon/hacktrain19/out.svg?4",
+              "size": "Small"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "{origin.name}",
+              "wrap": true,
+              "size": "Medium"
+            },
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Departing {origin.time}",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Small"
+            }
+          ],
+          "width": "stretch"
+        }
+      ],
+      "spacing": "Small"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "https://nathaniel.work/images/preserve/hackathon/hacktrain19/in.svg?3",
+              "size": "Small"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "{destination.name}",
+              "wrap": true,
+              "size": "Medium"
+            },
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Arriving {destination.time}",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Small"
+            }
+          ],
+          "width": "stretch"
+        }
+      ],
+      "spacing": "Small"
+    }
+  ],
+  "backgroundColor": "#fdf8f2"
+}
